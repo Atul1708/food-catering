@@ -1,0 +1,335 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Changa:wght@200&family=Concert+One&family=Fredoka+One&family=Handlee&family=Josefin+Sans&family=Lobster&family=Mingzat&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Roboto&family=Secular+One&family=Shadows+Into+Light&display=swap');
+
+@font-face {
+    font-family: 'HappySunday';
+    src: url(HappySundayRegular.ttf);
+
+}
+
+/* @font-face {
+    font-family: 'Into The Void';
+    src: url(Into The Void.ttf);
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.navigation {
+    display: flex;
+    position: sticky;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, .35);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: grey;
+    font-size: 36px;
+    padding: 10px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar ul li a {
+    display: block;
+    font-size: 22px;
+    text-decoration: none;
+    color: grey;
+    letter-spacing: 2px;
+}
+
+.navbar ul li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+@media (min-width:280px) and (max-width:500px) {
+    .navbar ul li a {
+        display: none;
+    }
+
+    /* .navbar{
+        display: flex;
+        flex-direction: column;
+    } */
+}
+
+/* main section photo */
+
+.main-photo {
+    background: url("panner.jpg") no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* line between */
+.line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* about catering */
+.main-section {
+    display: flex;
+}
+
+.side-photo {
+    /* display: block; */
+    margin-top: 30px;
+    background: url("dessert.jpg") no-repeat left/cover;
+    width: 100%;
+    height: 80vh;
+   padding: 0 10px;
+   margin-left: 20px;
+}
+
+.menu h1 {
+    width: 100%;
+    margin-top: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.menu h2 {
+    width: 100%;
+    font-family: 'Ibarra Real Nova', serif;
+    text-align: center;
+}
+
+.menu p {
+    line-height: 1.3;
+    font-size: 24px;
+    margin: 10px auto;
+    text-align: center;
+    width: 50%;
+}
+
+/* mobile view of about catering */
+
+
+/* lower menu section */
+.menu-content {
+    display: flex;
+}
+
+.left-photo {
+    background: url("menuphoto.jpg")no-repeat right/cover;
+    width: 50%;
+    height: 100vh;
+    margin-right: 20px;
+}
+
+.left-menu {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.left-menu h1 {
+    font-family: 'Ibarra Real Nova', serif;
+    text-align: center;
+    font-size: 44px;
+    letter-spacing: 2px;
+    font-weight: 500;
+
+}
+
+.left-menu h3 {
+    font-family: 'Ibarra Real Nova', serif;
+    margin-left: 80px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.left-menu p {
+    font-family: 'Ibarra Real Nova', serif;
+    margin-left: 80px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* mobile view of menu section */
+
+
+/* contact section */
+
+.info h1 {
+    padding: 0 0 0 20px;
+    font-family: 'Ibarra Real Nova', serif;
+    font-size: 72px;
+    font-weight: 500;
+}
+
+.info p {
+    font-family: 'Ibarra Real Nova', serif;
+    padding: 0 0 0 20px;
+    letter-spacing: 1.3px;
+    font-size: 18px;
+}
+
+.info .para {
+    font-family: 'Ibarra Real Nova', serif;
+    color: rgb(255, 90, 247);
+    font-size: 28px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    border: none;
+    font-family: 'Ibarra Real Nova', serif;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    font-family: 'Ibarra Real Nova', serif;
+    padding: 10px;
+    font-weight: 700;
+    width: 10%;
+    background-color: lightgray;
+    border: none;
+}
+
+.btn:hover {
+    font-weight: 600;
+    background-color: darkgrey;
+    border: 1px solid black;
+}
+
+@media (max-width:500px){
+    .navbar ul li a{
+        display: none;
+    }
+    .side-photo{
+        display: none;
+    }
+    .menu p {
+        line-height: 1.3;
+        font-size: 20px;
+        margin: 10px auto;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+    }
+    .menu-content{
+        flex-direction: column;
+    }
+    .left-photo{
+        width: 100%;
+        padding: 10px;
+    }
+    .left-menu{
+        width: 100%;
+        gap:15px;
+        justify-content: flex-start;
+    }
+    .left-menu h1, h3,p{
+        
+    }
+    .left-menu h1{
+        font-size:36px;
+        margin:0 auto;
+    }
+    
+    .btn{
+        width: 100%;
+    }
+}
+
+    @media (min-width:401px) and (max-width:600px){
+        .navbar ul li a{
+            font-size: 16px;
+        }
+        .side-photo{
+            display: none;
+        }
+        .menu p{
+            width: 100%;
+            padding: 10px;
+        }
+        .menu-content{
+            display: flex;
+            flex-direction: column;
+        }
+
+     .left-photo{
+        width: 100%;
+        padding: 10px;
+    }
+    .left-menu{
+        width: 100%;
+        gap:15px;
+        justify-content: flex-start;
+    }
+    .btn{
+        width:80%;
+        margin: 0 auto;
+    }
+}
+@media (min-width:600px) and (max-width:1200px){
+    .navbar ul li a{
+        font-size: 18px;
+    }
+    .main-section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .side-photo{
+       width:100%;
+       height: 150vh;
+    }
+    .menu p {
+        width: 100%;
+        padding: 10px;
+    }
+    .btn{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .menu-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+ .left-photo{
+    width: 100%;
+    margin: 0 10px 0 10px;
+}
+.left-menu{
+    width: 100%;
+    gap:15px;
+    justify-content: flex-start;
+}
+}

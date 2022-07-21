@@ -1,0 +1,114 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */ 
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Changa:wght@200&family=Concert+One&family=Fredoka+One&family=Handlee&family=Josefin+Sans&family=Lobster&family=Mingzat&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Roboto&family=Secular+One&family=Shadows+Into+Light&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    position: sticky;
+    box-shadow: 2px 2px 3px grey;
+    top:0;
+    background: white;
+    padding: 10px;
+    margin-bottom: 32px;
+    z-index: 50;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.bar-logo{
+    font-size: 32px;
+}
+.main{
+    display: flex;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+}
+.main h1{
+    font-size: 73px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap:50px; 
+}
+.tag{
+    background-color: green;
+    color:white;
+    padding: 5px 10px;
+    align-self: flex-start;
+}
+button{
+    border: none;
+    padding: 10px 15px;
+    transition: .3s ease-in-out;
+}
+button:hover{
+    opacity: .8;
+    transition: .3s ease-in-out;
+}
+.btn{
+    align-self: flex-start;
+    background-color: orange;
+}
+
+.features{
+    margin-top: 100px;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+.features:hover{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1,.5);
+    transition: .3s ease-in-out;
+}
+.photo img{
+    width:72px;
+}
+.photo{
+    display: flex;
+    gap:20px;
+    padding: 10px;
+    transition: .3s ease-in-out; 
+}
+@media (max-width:786px){
+    .main{
+        flex-direction: column;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+    }
+    .image img{
+        width: 80%;
+    }
+    .main-content{
+        gap:10px;
+        padding: 10px;
+    }
+    .photo img{
+        display: flex;
+        flex-direction: column;
+    } 
+}
